@@ -1,0 +1,129 @@
+# vsim -f ./scripts/vsim.file "+firmware=fw.hex" -wlf ./wlf/sim_simple.wlf -l ./log/sim_simple.log -do "do ./scripts/macrovsim.do simple" work.top 
+# Start time: 16:12:57 on Dec 14,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading work.spiflash(fast)
+# do ./scripts/macrovsim.do simple
+# 
+# Reset (FFh)
+# -- BEGIN
+# [90000        ]--  SPI SDR  ff 00
+# -- END
+# 
+# Power Up (ABh)
+# -- BEGIN
+# [195000       ]--  SPI SDR  ab 00
+# -- END
+# 
+# Read Data (03h)
+# -- BEGIN
+# [300000       ]--  SPI SDR  03 00
+# [385000       ]--  SPI SDR  00 03
+# [470000       ]--  SPI SDR  00 00
+# [555000       ]--  SPI SDR  00 00
+# [640000       ]--  SPI SDR  00 11
+# [725000       ]--  SPI SDR  00 22
+# [810000       ]--  SPI SDR  00 33
+# [895000       ]--  SPI SDR  00 44
+# [980000       ]--  SPI SDR  00 55
+# [1065000      ]--  SPI SDR  00 66
+# [1150000      ]--  SPI SDR  00 77
+# [1235000      ]--  SPI SDR  00 88
+# -- END
+# 
+# Quad I/O Read (EBh)
+# -- BEGIN
+# [1340000      ]--  SPI SDR  eb 00
+# [1365000      ]-- QSPI SDR  00 --
+# [1390000      ]-- QSPI SDR  00 --
+# [1415000      ]-- QSPI SDR  00 --
+# [1440000      ]-- QSPI SDR  a5 --
+# [1585000      ]-- QSPI SDR  -- 11
+# [1610000      ]-- QSPI SDR  -- 22
+# [1635000      ]-- QSPI SDR  -- 33
+# [1660000      ]-- QSPI SDR  -- 44
+# [1685000      ]-- QSPI SDR  -- 55
+# [1710000      ]-- QSPI SDR  -- 66
+# [1735000      ]-- QSPI SDR  -- 77
+# [1760000      ]-- QSPI SDR  -- 88
+# -- END
+# 
+# Continous Quad I/O Read
+# -- BEGIN
+# [1805000      ]-- QSPI SDR  00 --
+# [1830000      ]-- QSPI SDR  00 --
+# [1855000      ]-- QSPI SDR  00 --
+# [1880000      ]-- QSPI SDR  ff --
+# [2025000      ]-- QSPI SDR  -- 11
+# [2050000      ]-- QSPI SDR  -- 22
+# [2075000      ]-- QSPI SDR  -- 33
+# [2100000      ]-- QSPI SDR  -- 44
+# [2125000      ]-- QSPI SDR  -- 55
+# [2150000      ]-- QSPI SDR  -- 66
+# [2175000      ]-- QSPI SDR  -- 77
+# [2200000      ]-- QSPI SDR  -- 88
+# -- END
+# 
+# DDR Quad I/O Read (EDh)
+# -- BEGIN
+# [2305000      ]--  SPI SDR  ed 00
+# [2320000      ]-- QSPI DDR  00 --
+# [2335000      ]-- QSPI DDR  00 --
+# [2350000      ]-- QSPI DDR  00 --
+# [2365000      ]-- QSPI DDR  a5 --
+# [2500000      ]-- QSPI DDR  -- 11
+# [2515000      ]-- QSPI DDR  -- 22
+# [2530000      ]-- QSPI DDR  -- 33
+# [2545000      ]-- QSPI DDR  -- 44
+# [2560000      ]-- QSPI DDR  -- 55
+# [2575000      ]-- QSPI DDR  -- 66
+# [2590000      ]-- QSPI DDR  -- 77
+# [2605000      ]-- QSPI DDR  -- 88
+# -- END
+# 
+# Continous DDR Quad I/O Read
+# -- BEGIN
+# [2640000      ]-- QSPI DDR  00 --
+# [2655000      ]-- QSPI DDR  00 --
+# [2670000      ]-- QSPI DDR  00 --
+# [2685000      ]-- QSPI DDR  ff --
+# [2820000      ]-- QSPI DDR  -- zz
+# [2825000      ] ERROR: Got zz (zzzzzzzz) but expected 11 (00010001).
+# [2835000      ]-- QSPI DDR  -- zz
+# [2840000      ] ERROR: Got zz (zzzzzzzz) but expected 22 (00100010).
+# [2850000      ]-- QSPI DDR  -- zz
+# [2855000      ] ERROR: Got zz (zzzzzzzz) but expected 33 (00110011).
+# [2865000      ]-- QSPI DDR  -- zz
+# [2870000      ] ERROR: Got zz (zzzzzzzz) but expected 44 (01000100).
+# [2880000      ]-- QSPI DDR  -- zz
+# [2885000      ] ERROR: Got zz (zzzzzzzz) but expected 55 (01010101).
+# [2895000      ]-- QSPI DDR  -- zz
+# [2900000      ] ERROR: Got zz (zzzzzzzz) but expected 66 (01100110).
+# [2910000      ]-- QSPI DDR  -- zz
+# [2915000      ] ERROR: Got zz (zzzzzzzz) but expected 77 (01110111).
+# [2925000      ]-- QSPI DDR  -- zz
+# [2930000      ] ERROR: Got zz (zzzzzzzz) but expected 88 (10001000).
+# -- END
+# 
+# FAIL
+# ** Note: $stop    : ./../tb/spiflash_tb.v(369)
+#    Time: 2945 ns  Iteration: 0  Instance: /top
+# Break in Module top at ./../tb/spiflash_tb.v line 369
+# Stopped at ./../tb/spiflash_tb.v line 369
+# End time: 16:13:21 on Dec 14,2021, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0
